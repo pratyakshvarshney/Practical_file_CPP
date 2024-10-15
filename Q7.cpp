@@ -8,12 +8,14 @@ class Person {
         int age;
     public:
         // Constructor for Person class
-        Person(string n, int a) : name(n), age(a) {
+        Person(string n, int a) {
+            name = n;
+            age = a;
             cout << "Person constructor called for: " << name << endl;
         }
         
         // Method to display person details
-        void showPersonDetails() const {
+        void showPersonDetails() {
             cout << "Name: " << name << endl;
             cout << "Age: " << age << endl;
         }
@@ -30,12 +32,13 @@ class Employee : public Person {
         float salary;
     public:
         // Constructor for Employee class
-        Employee(string n, int a, float s) : Person(n, a), salary(s) {
+        Employee(string n, int a, float s) : Person(n, a) {
+            salary = s;
             cout << "Employee constructor called for: " << name << endl;
         }
         
         // Method to display employee details
-        void showEmployeeDetails() const {
+        void showEmployeeDetails() {
             showPersonDetails(); // Calls base class method to display name and age
             cout << "Salary: " << salary << endl;
         }
