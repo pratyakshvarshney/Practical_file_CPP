@@ -1,32 +1,36 @@
 #include<iostream>
 using namespace std;
 
-class Student {
-    private:
-        int roll_no;
-        string name;
-        float marks;
-    public:
-        void getdata() {
-            cout << "Enter student details:" << endl;
-            cout << "Enter roll number: ";
-            cin >> roll_no;
-            cin.ignore(); // To ignore newline character after entering roll_no
-            cout << "Enter student name: ";
-            getline(cin, name); // To allow spaces in name
-            cout << "Enter marks: ";
-            cin >> marks;
-        }
-        void display() const {
-            cout << "\nEntered record is: " << endl;
-            cout << "Roll number: " << roll_no << endl;
-            cout << "Name: " << name << endl;
-            cout << "Marks: " << marks << endl;
-        }
-};
+// Define a custom namespace
+namespace StudentInfo {
+    class Student {
+        private:
+            int roll_no;
+            string name;
+            float marks;
+        public:
+            void getdata() {
+                cout << "Enter student details:" << endl;
+                cout << "Enter roll number: ";
+                cin >> roll_no;
+                // Removing the ignore function to keep it simple
+                cout << "Enter student name: ";
+                cin >> name; // This will take input until the first space (no spaces allowed)
+                cout << "Enter marks: ";
+                cin >> marks;
+            }
+            void display() {
+                cout << "\nEntered record is: " << endl;
+                cout << "Roll number: " << roll_no << endl;
+                cout << "Name: " << name << endl;
+                cout << "Marks: " << marks << endl;
+            }
+    };
+}
 
 int main() {
-    Student s;
+    // Create a Student object using the custom namespace
+    StudentInfo::Student s;
     s.getdata();
     s.display();
     
