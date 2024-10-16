@@ -12,7 +12,7 @@ class employee{
             age = a;
             salary = s;
             name = n;
-            cout << "Constructor called for employee: " << name << endl;
+            cout << "Constructor called for : " << name << endl;
         }
         
         // Method to display employee details
@@ -24,7 +24,7 @@ class employee{
 
         // Destructor
         ~employee() {
-            cout << "Destructor called for employee: " << name << endl;
+            cout << "Destructor called for : " << name << endl;
         }
 };
 
