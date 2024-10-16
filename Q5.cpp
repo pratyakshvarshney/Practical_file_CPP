@@ -11,7 +11,7 @@ namespace StudentInfo {
         public:
             void getdata() {
                 cout << "Enter student details:" << endl;
-                cout << "Enter roll number: ";
+                cout << "Enter roll no. : ";
                 cin >> roll_no;
                 // Removing the ignore function to keep it simple
                 cout << "Enter student name: ";
@@ -21,7 +21,7 @@ namespace StudentInfo {
             }
             void display() {
                 cout << "\nEntered record is: " << endl;
-                cout << "Roll number: " << roll_no << endl;
+                cout << "Roll no. : " << roll_no << endl;
                 cout << "Name: " << name << endl;
                 cout << "Marks: " << marks << endl;
             }
