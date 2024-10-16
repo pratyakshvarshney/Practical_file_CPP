@@ -11,7 +11,7 @@ class Person {
         Person(string n, int a) {
             name = n;
             age = a;
-            cout << "Person constructor called for: " << name << endl;
+            cout << "Person constructor  for: " << name << endl;
         }
         
         // Method to display person details
@@ -22,7 +22,7 @@ class Person {
         
         // Destructor for Person class
         ~Person() {
-            cout << "Person destructor called for: " << name << endl;
+            cout << "Person destructor  for: " << name << endl;
         }
 };
 
@@ -34,7 +34,7 @@ class Employee : public Person {
         // Constructor for Employee class
         Employee(string n, int a, float s) : Person(n, a) {
             salary = s;
-            cout << "Employee constructor called for: " << name << endl;
+            cout << "Employee constructor  for: " << name << endl;
         }
         
         // Method to display employee details
@@ -45,7 +45,7 @@ class Employee : public Person {
 
         // Destructor for Employee class
         ~Employee() {
-            cout << "Employee destructor called for: " << name << endl;
+            cout << "Employee destructor  for: " << name << endl;
         }
 };
 
