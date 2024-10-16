@@ -9,7 +9,7 @@ class Car {
 
     public:
         // Parameterized constructor
-        Car(string c, string b, double p) {
+        Car(string c, string b, int p) {
             color = c;
             brand = b;
             price = p;
