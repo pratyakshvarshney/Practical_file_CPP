@@ -5,7 +5,7 @@ class Car {
     private:
         string color;
         string brand;
-        double price;
+        int price;
 
     public:
         // Parameterized constructor
@@ -26,13 +26,13 @@ class Car {
         void display() {
             cout << "Color: " << color << endl;
             cout << "Brand: " << brand << endl;
-            cout << "Price: $" << price << endl;
+            cout << "Price: ₹" << price << endl;
         }
 };
 
 int main() {
     // Create an instance of Car
-    Car car1("Red", "Toyota", 20000.0);
+    Car car1("Red", "Toyota", 1600000);
 
     // Use the copy constructor to create a new instance
     Car car2 = car1;
