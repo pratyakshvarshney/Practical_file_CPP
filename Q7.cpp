@@ -52,7 +52,7 @@ class Employee : public Person {
 int main() {
     // Creating an Employee object (inheriting from Person)
     cout << "Creating Employee object...\n";
-    Employee e1("John Doe", 30, 5000);
+    Employee e1("Jack", 30, 5000);
     
     // Displaying Employee details
     cout << "\nEmployee details:\n";
