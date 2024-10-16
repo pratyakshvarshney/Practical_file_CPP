@@ -17,7 +17,7 @@ class Book{
 };
 
 int main(){
-    Book b1("C++ Programming");
+    Book b1("Rich Dad Poor Dad");
     Book b2=b1;
     
     b1.display();
