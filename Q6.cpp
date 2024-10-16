@@ -18,8 +18,8 @@ class employee{
         // Method to display employee details
         void show() {
             cout << "Name of employee: " << name << endl;
-            cout << "Salary of employee: " << salary << endl;
-            cout << "Age of employee: " << age << endl;
+            cout << "Salary is: " << salary << endl;
+            cout << "Age is: " << age << endl;
         }
 
         // Destructor
