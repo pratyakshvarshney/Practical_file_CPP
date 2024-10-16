@@ -4,10 +4,10 @@ using namespace std;
 class Sample{
     public:
         Sample(){
-            cout<<"Constructor Called!!"<<endl;
+            cout<<"Constructor Called!"<<endl;
         }
         ~Sample(){
-            cout<<"Destructor Called!!"<<endl;
+            cout<<"Destructor Called!"<<endl;
         }
 };
 
