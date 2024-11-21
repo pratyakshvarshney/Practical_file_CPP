@@ -37,7 +37,7 @@ int main(){
     else{
         p[r-1].pattend();
     }
-    cout<<"main function section\n";
+    cout<<"hello\n";
     
     return 0;
 }
