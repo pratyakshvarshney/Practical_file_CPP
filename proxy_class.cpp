@@ -28,6 +28,7 @@ class proxy{
 };
 
 int proxy :: roll = 1;
+
 int main(){
     proxy p[60];
     int r;
